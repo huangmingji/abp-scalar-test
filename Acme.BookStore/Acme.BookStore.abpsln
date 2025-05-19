@@ -1,0 +1,50 @@
+{
+  "id": "9be51b93-2a73-4bba-bec1-435de463a9bf",
+  "template": "app",
+  "versions": {
+    "AbpFramework": "9.1.1",
+    "AbpStudio": "0.9.26",
+    "TargetDotnetFramework": "net9.0"
+  },
+  "modules": {
+    "Acme.BookStore": {
+      "path": "Acme.BookStore.abpmdl"
+    }
+  },
+  "runProfiles": {
+    "Default": {
+      "path": "etc/abp-studio/run-profiles/Default.abprun.json"
+    }
+  },
+  "options": {
+    "httpRequests": {
+      "ignoredUrls": [
+      
+      ]
+    }
+  },
+  "creatingStudioConfiguration": {
+    "template": "app",
+    "createdAbpStudioVersion": "0.9.26",
+    "tiered": "false",
+    "runInstallLibs": "true",
+    "useLocalReferences": "false",
+    "multiTenancy": "true",
+    "includeTests": "true",
+    "kubernetesConfiguration": "false",
+    "uiFramework": "angular",
+    "mobileFramework": "none",
+    "distributedEventBus": "none",
+    "databaseProvider": "mongodb",
+    "runDbMigrator": "true",
+    "theme": "leptonx-lite",
+    "themeStyle": "",
+    "themeMenuPlacement": "",
+    "mobileFramework": "none",
+    "progressiveWebApp": "false",
+    "runProgressiveWebAppSupport": "false",
+    "publicWebsite": "false",
+    "socialLogin": "true",
+    "createCommand": "abp new Acme.BookStore -t app --ui-framework angular --database-provider mongodb --theme leptonx-lite --skip-migration  --without-cms-kit --dont-run-bundling -no-file-management"
+  }
+}
